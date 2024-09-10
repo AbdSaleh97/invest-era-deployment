@@ -13,7 +13,7 @@ export default function Chat({ sender, receiver }) {
     console.log(tokens);
     console.log('user id', tokens.user.id);
     
-    const ws = new WebSocket("wss://web-socket-deployment.onrender.com/ws/chat/default/");
+    const ws = new WebSocket("ws://127.0.0.1:8000/ws/chat/default/");
     
     ws.onopen = () => {
       console.log("WebSocket connected");
