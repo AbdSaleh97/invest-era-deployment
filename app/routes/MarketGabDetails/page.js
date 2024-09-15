@@ -10,6 +10,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import "./page.css";
+import Chat from "@/app/components/chat/chat";
 
 function MarketGabDetails() {
   const { tokens } = useContext(AuthContext);
@@ -245,6 +246,7 @@ function MarketGabDetails() {
           </section>
         </div>
       </div>
+      <Chat />
     </div>
   );
 }
